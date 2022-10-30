@@ -10,6 +10,18 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "husky": "^8.0.1"
+    "eslint": "^8.26.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint",
+      "prettier --write ."
+    ]
+  },
+  "dependencies": {
+    "jest": "^29.2.2",
+    "prettier": "^2.7.1"
   }
 }
