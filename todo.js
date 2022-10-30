@@ -48,13 +48,7 @@ const todoList = () => {
   };
 
   return {
-    all,
-    add,
-    markAsComplete,
-    overdue,
-    dueToday,
-    dueLater,
-    toDisplayableList,
+    all,add,markAsComplete,overdue,dueToday,dueLater,toDisplayableList,
   };
 };
 
