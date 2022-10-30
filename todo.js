@@ -9,12 +9,12 @@ const todoList = () => {
   const markAsComplete = (index) => {
     all[index].completed = true;
   };
-  const ndate = () => new Date();
+  const Ndate = () => new Date();
   const overdue = () => {
     // Write the date check condition here and return the array of overdue items accordingly.
     // FILL YOUR CODE HERE
     return all.filter(
-      (dolist) => dolist.dueDate < ndate().toLocaleDateString("en-CA")
+      (dolist) => dolist.dueDate < Ndate().toLocaleDateString("en-CA")
     );
   };
 
@@ -22,7 +22,7 @@ const todoList = () => {
     // Write the date check condition here and return the array of todo items that are due today accordingly.
     // FILL YOUR CODE HERE
     return all.filter(
-      (dolist) => ndate().toLocaleDateString("en-CA") == dolist.dueDate
+      (dolist) => Ndate().toLocaleDateString("en-CA") == dolist.dueDate
     );
   };
 
@@ -30,7 +30,7 @@ const todoList = () => {
     // Write the date check condition here and return the array of todo items that are due later accordingly.
     // FILL YOUR CODE HERE
     return all.filter(
-      (dolist) => dolist.dueDate > ndate().toLocaleDateString("en-CA")
+      (dolist) => dolist.dueDate > Ndate().toLocaleDateString("en-CA")
     );
   };
 
